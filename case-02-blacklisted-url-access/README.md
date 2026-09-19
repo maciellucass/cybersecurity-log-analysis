@@ -34,9 +34,9 @@ The identified URL uses a URL shortening service (bit.ly), which is commonly lev
 
 Further analysis revealed that the user performed a prior web search related to payroll configuration. This behavior suggests that the access attempt was likely initiated through user interaction, such as clicking on a malicious or misleading search result.
 
-Firewall logs confirm that the outbound connection attempt was blocked and no communication with the external host was established.
+Firewall logs confirm that the outbound connection attempt was successfully blocked and no communication with the external host was established.
 
-No evidence of payload delivery, execution or endpoint compromise was identified during the investigation.
+No evidence of payload delivery, execution, or endpoint compromise was identified during the investigation.
 
 ## Conclusion
 
