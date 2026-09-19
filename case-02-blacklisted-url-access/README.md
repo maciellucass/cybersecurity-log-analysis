@@ -12,6 +12,10 @@ An alert was triggered when a user attempted to access an external URL that is l
 - Date: Sep 19th 2026 13:15  
 - Data Source: Firewall  
 
+## Alert Visualization
+
+![Alert Screenshot](case-02-blacklisted-url-access-screenshot.png)
+
 ## Affected Entities
 
 - Source IP: 10.20.2.17  
@@ -41,10 +45,6 @@ The firewall successfully prevented access to a blacklisted URL, mitigating the 
 - Educate users about phishing and malicious links
 - Consider blocking or monitoring URL shortening services
 - Review endpoint logs for additional suspicious activity
-
-## Alert Visualization
-
-![Alert Screenshot](../screenshots/case-02-blacklisted-url-access.png)
 
 ## Disclaimer
 
