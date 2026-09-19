@@ -2,7 +2,7 @@
 
 ## Alert Overview
 
-An alert was triggered when a user attempted to access an external URL that is listed in the organization's blacklist or threat intelligence feeds. The firewall successfully blocked the request, preventing the connection.
+An alert was triggered when an internal host attempted to access an external URL listed in the organization's blacklist. The security control (firewall) successfully blocked the request, preventing the connection.
 
 ## Alert Information
 
@@ -21,30 +21,40 @@ An alert was triggered when a user attempted to access an external URL that is l
 - Source IP: 10.20.2.17  
 - Destination IP: 67.199.248.11  
 - URL: http://bit.ly/3sHkX3da12340  
+- Application: Web Browsing  
+- Protocol: TCP  
 
 ## Investigation
 
-The analysis of the firewall logs shows that an internal host attempted to access a shortened URL (bit.ly), which is commonly used to obfuscate malicious destinations.
+The investigation was conducted using a SIEM simulator, focusing on the analysis of network activity and user behavior associated with the alert.
 
-Key findings:
+The identified URL uses a URL shortening service (bit.ly), which is commonly leveraged to obscure malicious destinations. Threat intelligence indicates that the destination is associated with known malicious activity.
 
-- The request was blocked by the firewall (Action: blocked)
-- The destination domain is associated with known malicious activity
-- URL shortening services were used to hide the final destination
-- The traffic was identified as web browsing over TCP (port 80)
+Further analysis revealed that the user performed a prior web search related to payroll configuration. This behavior suggests that the access attempt was likely initiated through user interaction, such as clicking on a malicious or misleading search result.
 
-These indicators suggest a potential phishing attempt or user interaction with a malicious link.
+Firewall logs confirm that the outbound connection attempt was blocked and no communication with the external host was established.
+
+No evidence of payload delivery, execution or endpoint compromise was identified during the investigation.
 
 ## Conclusion
 
-The firewall successfully prevented access to a blacklisted URL, mitigating the potential threat before it could impact the system. However, the attempt indicates that a user may have interacted with a suspicious or malicious link.
+The firewall effectively mitigated the threat by blocking access to a known malicious URL.
+
+Although no compromise occurred, the event indicates that the user was exposed to a potentially malicious link, likely through search engine interaction. This highlights the risk of phishing or malicious redirection through legitimate browsing activity.
 
 ## Recommendations
 
-- Investigate the source host for potential compromise
-- Educate users about phishing and malicious links
-- Consider blocking or monitoring URL shortening services
-- Review endpoint logs for additional suspicious activity
+- Provide user awareness regarding risks associated with shortened URLs and unknown links  
+- Reinforce training on phishing and malicious search results  
+- Monitor the source host (10.20.2.17) for any additional suspicious behavior  
+- Ensure endpoint protection solutions are active and updated  
+
+## Indicators of Compromise (IOCs)
+
+- URL: http://bit.ly/3sHkX3da12340  
+- Destination IP: 67.199.248.11  
+- URL shortening service usage (bit.ly)  
+- Firewall rule triggered: Blocked Sites  
 
 ## Disclaimer
 
