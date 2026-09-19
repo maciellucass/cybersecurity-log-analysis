@@ -14,6 +14,12 @@ Sep 19th 2026 – 13:11 - 13:16
 
 ---
 
+## Alert Details
+
+![Phishing Email Screenshot](./case-01-phishing-email-analysis-screenshot.png)
+
+--
+
 ## Affected Entities
 
 - User: c.allen@thetrydaily.thm  
@@ -53,12 +59,6 @@ No attachments were present in the email.
 - No evidence of user interaction with the link  
 
 ---
-
-## Evidence
-
-![Phishing Email Screenshot](./case-01-phishing-email-analysis-screenshot.png)
-
---
 
 ## Classification
 
