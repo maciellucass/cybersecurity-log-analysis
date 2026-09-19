@@ -28,7 +28,7 @@ Sep 19th 2026 – 13:17 - 13:20
 
 ---
 
-## Summary
+## Incident
 
 An alert was triggered for a suspicious inbound email containing an external link with potential phishing characteristics. The message attempts to impersonate Microsoft and lure the user into clicking a malicious login link.
 
