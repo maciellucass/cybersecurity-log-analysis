@@ -36,17 +36,14 @@ An alert was triggered for a suspicious inbound email containing an external lin
 
 ## Investigation
 
-The analysis focused on the email content, sender reputation, and embedded link.
+The analysis focused on the email content, sender reputation and embedded link.
 
 Key observations:
-
 - The sender domain (m1crosoftsupport.co) is a spoofed version of a legitimate Microsoft domain  
 - The domain uses character substitution (1 instead of i), a common phishing technique  
 - The email subject indicates urgency: "Unusual Sign-In Activity"  
 - The message attempts to create panic and force immediate action  
 - The link directs the user to a fake login page  
-
-No attachments were present in the email.
 
 ---
 
@@ -61,7 +58,7 @@ No attachments were present in the email.
 
 ## Classification
 
-True Positive – Phishing Attempt
+True Positive
 
 ---
 
@@ -90,3 +87,9 @@ These indicators confirm that the email is a phishing attempt.
 ## Conclusion
 
 The investigation confirmed a phishing attempt targeting an internal user. The attack relied on domain spoofing and social engineering techniques. No compromise was identified during the analysis.
+
+---
+
+## Disclaimer
+
+This analysis was conducted in a controlled lab environment for educational purposes on TryHackMe. All activities were performed in accordance with ethical guidelines and did not involve any real-world systems or users.
