@@ -54,6 +54,12 @@ No attachments were present in the email.
 
 ---
 
+## Evidence
+
+![Phishing Email Screenshot](./case-01-phishing-email-analysis-screenshot.png)
+
+--
+
 ## Classification
 
 True Positive – Phishing Attempt
