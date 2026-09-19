@@ -26,7 +26,7 @@ An alert was triggered when an internal host attempted to access an external URL
 
 ## Investigation
 
-The investigation was conducted using a SIEM simulator, focusing on the analysis of network activity and user behavior associated with the alert.
+The investigation was conducted using Splunk, focusing on the analysis of firewall logs and user activity associated with the alert.
 
 The identified URL uses a URL shortening service (bit.ly), which is commonly leveraged to obscure malicious destinations. Threat intelligence indicates that the destination is associated with known malicious activity.
 
