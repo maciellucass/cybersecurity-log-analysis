@@ -1,7 +1,7 @@
 # Case 01 – Phishing Email Analysis
 
 ## Time of Activity
-Sep 19th 2026 – 13:11 - 13:16
+Sep 19th 2026 – 13:17 - 13:20
 
 ---
 
