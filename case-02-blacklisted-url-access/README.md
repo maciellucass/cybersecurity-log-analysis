@@ -12,9 +12,9 @@ An alert was triggered when an internal host attempted to access an external URL
 - Date: Sep 19th 2026 13:15  
 - Data Source: Firewall  
 
-## Alert Visualization
+## Alert Report
 
-![Alert Screenshot](case-02-blacklisted-url-access-screenshot.png)
+![Event Report](case-02-event-report.png)
 
 ## Affected Entities
 
@@ -27,6 +27,8 @@ An alert was triggered when an internal host attempted to access an external URL
 ## Investigation
 
 The investigation was conducted using Splunk, focusing on the analysis of firewall logs and user activity associated with the alert.
+
+![Splunk Investigation](case-02-splunk-investigation.png)
 
 The identified URL uses a URL shortening service (bit.ly), which is commonly leveraged to obscure malicious destinations. Threat intelligence indicates that the destination is associated with known malicious activity.
 
