@@ -18,7 +18,6 @@ Sep 19th 2026 – 13:17 - 13:20
 
 ![Phishing Email Screenshot](./case-01-phishing-email-analysis-screenshot.png)
 
---
 
 ## Affected Entities
 
